@@ -1,0 +1,19 @@
+{
+    "type": "module",
+    "dependencies": {
+        "@theresnotime/ipa-validator": "^1.5.4",
+        "fastest-levenshtein": "^1.0.16",
+        "hepburn": "^1.2.1",
+        "js-levenshtein": "^1.1.6",
+        "kana2ipa": "^1.0.1",
+        "kuroshiro": "~1.1.2",
+        "kuroshiro-analyzer-kuromoji": "^1.1.0",
+        "opencc-js": "^1.0.5",
+        "pinyin-pro": "^3.20.2",
+        "pinyin-separate": "^1.2.0",
+        "pinyin2ipa": "^1.0.4",
+        "transliteration": "^2.3.5",
+        "wikibase-sdk": "^10.0.2",
+        "xregexp": "^5.1.1"
+    }
+}
