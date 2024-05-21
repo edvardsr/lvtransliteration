@@ -16,14 +16,14 @@ langmap = {
     'pt': 'por-Latn',
     'ro': 'ron-Latn',
     'ru': 'rus-Cyrl',
-    'zh': 'cmn-Hans'
+    # 'zh': 'cmn-Hans'
 }
 
 jaReplacements = {
     'ヶ': 'ga'
 }
 
-cedict_file = 'cedict_ts.u8'
+# cedict_file = 'cedict_ts.u8'
 converter = opencc.OpenCC('hk2s.json')
 
 def readKeysFromFile(filename):
@@ -48,10 +48,10 @@ def processLanguages(dir_keys, outdir):
         keys = readKeysFromFile(os.path.join(dir_keys, lang_to_keys[language]))
         res = {}
 
-        if language == 'zh':
-            eptrn = epitran.Epitran(langmap[language], cedict_file=cedict_file)
-        else:
-            eptrn = epitran.Epitran(langmap[language])
+        # if language == 'zh':
+        #     eptrn = epitran.Epitran(langmap[language], cedict_file=cedict_file)
+        # else:
+        eptrn = epitran.Epitran(langmap[language])
 
         it=0
         keylen = len(keys)
